@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <% include templates/head.ejs%>
+</head>
+<body>
+    <% include templates/header.ejs%>
+
+    <!-- Insert Body here -->
+    <div class="container">
+        <div class="starter-template">
+            <h3 class="text-center "> Todo Application using Node.js </h3>
+            <hr />
+            <div>
+                <b>Notes:</b>
+                <a class="btn btn-sm btn-default pull-right" href="/create">Create New</a> <br /> <br />
+                <% if(notes.length>0) { %>
+                <div class="todo-list">
+                    <ul class="list-group">
+                        <% for(var i=0; i < notes.length; i++) { %>
+                        <li class="list-group-item">
+                           <b> <%= i+1 %>.</b> <%= notes[i] %>
+                            <a href="/delete/<%=i%>" class="btn btn-sm btn-warning pull-right ">Remove</a>
+                            <a href="/update/<%=i%>" class="btn btn-sm btn-success pull-right">Edit</a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+                <% } else {%>
+                <h4>No note found.</h4>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

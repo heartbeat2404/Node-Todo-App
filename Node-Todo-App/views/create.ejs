@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <% include templates/head.ejs%>
+</head>
+<body>
+    <% include templates/header.ejs%>
+
+    <!-- Insert Body here -->
+    <div class="container">
+        <div class="starter-template">
+            <h3 class="text-center "> Create New Note:</h3>
+            <hr />
+            <div class="note-form">
+                <form action="/create" method="POST">
+                    <div class="form-group">
+                        <label for="note">Note:</label>                        
+                        <textarea class="form-control" name="note" id="note" placeholder="Enter Note" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                    <a class="btn btn-sm btn-danger" href="/">Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

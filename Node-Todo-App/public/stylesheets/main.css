@@ -1,0 +1,59 @@
+﻿body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #acd7e8;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #2377b6;
+    border-color: #808080;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #acd7e8;
+        font-weight: bold;
+    }
+
+h3 {
+    color: #2377b6;
+}
+
+
+ul li {
+    list-style-type: square;
+}
+
+li .btn {
+    padding: 0px 10px;
+    margin: 0px 4px;
+}
+
+ul li:hover {
+    background-color: #acd7e8;
+    color: #ffffff;
+}
+
+.todo-list {
+    margin-top: 10px;
+}
+
+
+.starter-template {
+    margin-top: 60px;
+}
+
+.note-form {
+    border: 1px solid #acd7e8;
+    border-radius: 4px;
+    padding: 10px;
+}
